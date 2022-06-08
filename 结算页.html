@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/网易云课堂 .png" />
+    <script src="js/结算页.js"></script>
+    <title>结算页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 390px;
+            height: 844px;
+            margin: 0 auto;
+            background-color: rgb(242, 243, 246);
+
+        }
+        .top {
+            width: 96%;
+            height: 80px;
+        }
+        #e1{
+            float: left;
+            margin-left: 20px;
+        }
+        #e2{
+            float: left;
+            margin-left: -145px;
+            margin-top: 25px;
+        }
+        .top a {
+            text-decoration: none;
+            color: grey;
+            font-size: 14px;
+            float: right;
+            margin-top: 10px;
+        }
+        .zj {
+            width: 100%;
+            height: 120px;
+            background-color: white;
+        }
+
+
+        .a1 {
+            width: 92%;
+            height: 120px;
+            margin: 0 auto;
+        }
+
+        .a1 a img {
+            width: 130px;
+            height: 80px;
+            border-radius: 5px;
+            margin-top: 15px;
+            float: left;
+        }
+
+        .a1>a>:nth-child(2) {
+            font-size: 16px;
+            float: left;
+            margin-top: 20px;
+            margin-left: 20px;
+            color: black;
+
+        }
+
+        .a1>a>:nth-child(3) {
+            font-size: 13px;
+            float: left;
+            margin-top: 50px;
+            margin-left: -75px;
+            color: grey;
+
+        }
+
+        .a1>a>:nth-child(4) {
+            font-size: 12px;
+            float: left;
+            margin-top: 85px;
+            margin-left: 25px;
+            color: coral;
+
+        }
+
+        .a1>a>:nth-child(5) {
+            font-size: 17px;
+            float: left;
+            margin-top: -20px;
+            margin-left: 290px;
+            color: black;
+
+        }
+
+        #b1 {
+            width: 100%;
+            height: 50px;
+            position: relative;
+            line-height: 50px;
+            background-color: white;
+        }
+
+        #bb1 {
+            position: absolute;
+            left: 15px;
+        }
+
+        #bb2 {
+            position: absolute;
+            right: 50px;
+            font-size: 13px;
+            color: gray;
+        }
+
+        #bb3 {
+            position: absolute;
+            right: 10px;
+            font-size: 20px;
+            color: gray;
+        }
+
+        .zf {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            position: relative;
+        }
+        .xll{
+            display: none;
+        }
+
+        .zf>p {
+            line-height: 50px;
+            position: absolute;
+            left: 10px;
+            position: absolute;
+        }
+
+        #zfb {
+            width: 70px;
+            height: 20px;
+            font-size: 10px;
+            position: absolute;
+            left: 290px;
+            top: 20px;
+            position: relative;
+        }
+
+        #zfb>span {
+            position: absolute;
+        }
+
+        #sx {
+            position: relative;
+            right: -20px;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+
+
+        }
+
+        #shang {
+            position: absolute;
+            top: 0px;
+           opacity: 0;
+        }
+
+        #xia {
+            position: absolute;
+            top: 0 px;
+        }
+
+        #wx,
+        #zfbb,
+        #hb {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            position: relative;
+            border-top: 1px solid gainsboro;
+
+        }
+
+        #ww,
+        #ww2,
+        #ww3 {
+            width: 70px;
+            height: 20px;
+            position: absolute;
+            left: 10px;
+            top: 15px;
+            position: relative;
+        }
+
+        #ww>span,
+        #ww2>span,
+        #ww3>span {
+            position: absolute;
+        }
+
+        #dg,
+        #dg2,
+        #dg3 {
+            right: 15px;
+            position: relative;
+            position: absolute;
+        }
+
+        #dg>img,
+        #dg3>img {
+            position: absolute;
+            top: -1px;
+            opacity: 0;
+        }
+
+        #dg2>img {
+            position: absolute;
+            top: -1px;
+        }
+
+        #dg2>div {
+            opacity: 0;
+        }
+        #youhui{
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            border-bottom: 1px solid gainsboro;
+            cursor: pointer;
+
+        }
+        #youhui p{
+            float: right;
+            margin-right: 40px;
+        }
+        #youhui span{
+            float: right;
+            margin-right: -110px;
+            font-size: 20px;
+            color: gray;
+        }  
+        #tankang{
+            float: left;
+            width: 300px;
+            height: 150px;
+            background-color: white;
+            border-radius: 5px;
+            margin-left: 40px;
+            margin-top: -100px;
+            position: absolute;
+            z-index: 100;
+            display: none;
+        }    
+        #tankang>p{
+            text-align: center;
+            float: left;
+            margin-top: 10px;
+            margin-left: 110px;
+        }  
+        #tankang>input{
+            width: 80%;
+            height: 40px;
+            float: left;
+            margin-top: 20px;
+            margin-left: 30px;
+            outline: none;
+            border: 1px solid gainsboro;
+            text-align: center;
+            color: gray;
+        }
+        
+        #a1{
+            display: inline-block;
+            text-align: center;
+            width: 49%;
+            height: 30px;
+       
+            border-top: 1px solid gainsboro;
+            border-right: 1px solid gainsboro;
+            float: left;
+            margin-left: 0;
+            margin-top: 25px;
+            font-size: 14px;
+            line-height: 30px;
+            cursor: pointer;
+        }
+        #a2{
+            display: inline-block;
+            text-align: center;
+            width: 50%;
+            height: 30px;          
+            border-top: 1px solid gainsboro;
+            float: right;
+            margin-top: 25px;
+            color:gray;
+            font-size: 14px;
+            line-height: 30px;
+            cursor: pointer;
+
+        }
+        .bottom{
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            margin-top: 280px;
+        }
+        .bottom :nth-child(1){
+            float: left;
+            margin-left: 10px;
+            line-height: 50px;
+        }
+        .bottom :nth-child(2){
+            float: left;
+            margin-left: 8px;
+            line-height: 50px;
+            font-size: 10px;
+            margin-top: 2px;
+        }
+        .bottom :nth-child(3){
+            float: left;
+            margin-left: 8px;
+            line-height: 50px;
+            font-size: 20px;
+           color: orangered;
+        }
+        .bottom :nth-child(4){
+            width: 150px;
+            height: 40px;
+            background-color: orangered;
+            border-radius: 50PX 50PX 50PX 50PX;
+            float: left;
+            margin-left: 75px;
+            margin-top: 5PX;
+            line-height: 50px;
+            font-size: 15PX;
+           color: white;
+           text-align: center;
+           line-height: 40PX;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="top"><br>
+            <p id="e1">山西太原欣知大数据</p>
+            <p id="e2">手机登录</p>
+            <a href="">更换账号></a>
+        </div>
+        <div class="zj">
+            <div class="a">
+                <div class="a1">
+                    <a href="">
+                        <img src="img/1.jpg" alt="">
+                        <p>交互式PPT</p>
+                        <span>永久可看</span>
+                        <p>会员价</p>
+                        <div>￥177.00</div>
+                    </a>
+                </div>
+            </div>
+        </div><br>
+        <div id="b1"><span id="bb1">平台优惠</span><span id="bb2">9.5折(满159可用)</span><span id="bb3">></span></div>
+        <br>
+        <div class="xl">
+
+            <div class="zf">
+                <p>支付方式</p>
+                <div id="zfb">
+                    <img src="img/支付-支付宝.png" alt="">
+                    <span>支付宝</span>
+                </div>
+                <div id="sx">
+                    <img id="shang" src="img/上.png" alt="">
+                    <img id="xia" src="img/下.png" alt="">
+                </div>
+            </div>
+            <div class="xll">
+                <div id="wx">
+                    <div id="ww">
+                        <img id="p1" src="img/微信支付.png" alt="">
+                        <span id="s1" style="font-size:12px ;">微信支付</span>
+                    </div>
+                    <div id="dg">
+                        <div id="mg1" style="width:15px ;height: 15px;border: 1px solid gray; border-radius: 50%;"></div>
+                        <img id="sp1" src="img/对勾小.png" alt="">
+                    </div>
+                </div>
+                <div id="zfbb">
+                    <div id="ww2">
+                        <img id="p2" src="img/支付-支付宝.png" alt="">
+                        <span id="s2" style="font-size:12px ;">支付宝</span>
+                    </div>
+                    <div id="dg2">
+                        <div id="mg2" style="width:15px ;height: 15px;border: 1px solid gray; border-radius: 50%;"></div>
+                        <img id="sp2" src="img/对勾小.png" alt="">
+                    </div>
+                </div>
+                <div id="hb">
+                    <div id="ww3">
+                        <img id="p3" src="img/花呗.png" alt="">
+                        <span id="s3" style="font-size:12px ;">花呗分期</span>
+                    </div>
+                    <div id="dg3">
+                        <div id="mg3" style="width:15px ;height: 15px;border: 1px solid gray; border-radius: 50%;"></div>
+                        <img id="sp3" src="img/对勾小.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="youhui">
+            <p>优惠码兑换</p><span>></span>
+        </div>
+        <div id="tankang">
+            <p>优惠码兑换</p>
+            <input  type="text" name="" id="inp" value="请输入兑换码">
+            <div id="a1">取消</div>
+            <div id="a2">兑换</div>
+        </div><br>
+        <div>
+            <span style="color: gray;">提交订单则表示您同意</span>
+            <span>网易云课堂用户服务协议、网易云课堂售后政策等</span>
+        </div>
+        <div class="bottom">
+            <span>实付金额:</span>
+            <span>￥</span>
+            <span>94.00</span>
+            <div id="fq">立即支付</div>
+        </div>
+</body>
+
+</html>

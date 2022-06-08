@@ -1,0 +1,180 @@
+*{
+  margin: 0;
+  padding: 0;  
+}
+.box{
+    width: 390px;
+    height: auto;
+    margin: 0 auto;
+    background-color: rgb(242, 243, 246);
+    position: relative;
+    box-shadow: 0 0 10px #d0d0d0;
+}
+#img1 img{
+    width: 100%;
+    height:180px ;
+}
+.swiper-wrapper img{
+    width: 100%;
+    height:180px ;
+}
+.zj{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    line-height: 50px;
+    position: relative;
+   
+}
+.zj img{
+    width: 25px;
+    height: 25px;
+}
+#m1{
+    position: absolute;
+    left: 50px;
+    top: 10px;
+}
+#m2{
+    position: absolute;
+    right: 100px;
+    top: 10px;
+}
+#s1{
+    position: absolute;
+    left: 80px;
+    top: 0px;
+}
+#s2{
+    position: absolute;
+    right: 70px;
+    top: 0;
+}
+.zj div{
+    width: 1px;
+    height: 25px;
+    background-color: gainsboro;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+
+}
+.a{
+    width: 100%;
+    height:120px ;
+    background-color: white;
+    border-bottom: 1px solid gainsboro;
+}
+.a1{
+    width: 92%;
+    height:120px ;
+    margin: 0 auto;   
+}
+.a1 a img{
+width: 130px;
+height: 80px;
+border-radius: 5px;
+margin-top: 15px;
+float: left;
+}
+.a1>a>:nth-child(2){
+    font-size: 14px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: black;
+
+}
+.a1>a>:nth-child(3){
+    font-size: 13px;
+    float: left;
+    margin-top: 0px;
+    margin-left: 20px;
+    color: gray;
+}
+.a1>a>:nth-child(4){
+    font-size: 16px;
+    float: left;
+    margin-top: 30px;
+    margin-left: -135px;
+    color: black;
+}
+.a1>a>div{
+    font-size: 16px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 120px;
+    color: black;
+    width: 100px;
+    height: 25px;
+    border-radius: 50px 50px 50px 50px;
+    border: 1px solid #FF3F29;
+    text-align: center;
+    line-height: 25px;
+    color: #FF3F29;
+}
+.q{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-top: 8px;
+}
+#i{
+   border-bottom: none;
+}
+.bot{
+    width: 390px;
+    height: 50px;
+    position: relative; 
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;     
+    background-color: white;
+    position: fixed;
+    bottom: -30px;}
+.p1{
+    font-size: 10px;
+    position: absolute;
+    left: 20px;
+    bottom: -5px;
+}
+.icon1{
+    position: absolute;
+    left: 30px;
+}
+.icon2{
+    position: absolute;
+    left:170px ;
+}
+.p2{
+    font-size: 10px;
+    position: absolute;
+    left: 160px;
+    bottom: -5px;
+}
+.icon3{
+    position: absolute;
+    left:310px ;
+}
+.p3{
+    font-size: 10px;
+    position: absolute;
+    left: 300px;
+    bottom: -5px;
+}
+.anniu{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    box-shadow: 1px 5px gray;
+    /* position: fixed;
+    bottom: 100px;
+    left: 10px; */
+    position: sticky;
+    bottom: 200px;
+    left:  550px ;   
+}
+
+

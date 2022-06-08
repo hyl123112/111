@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="css/登录页.css" />
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/登录页.js"></script>
+</head>
+
+<body>
+    
+
+    <div class="box">
+        <div id="hyl-login-body">
+            <div id="hyl-login-body-right">
+                <div id="hyl-login-top">
+                    <div id="hyl-top-left">网易云课堂</div>
+                    
+                </div>
+                <div class="hyl-select-box">
+                    <div class="hyl-select" style="background:#FF3F29;color:#fff;border-right:0; text-align: center;">手机号登录</div>
+                    <div class="hyl-select" >手机号快捷注册</div>
+                </div>
+                <div class="hyl-selects">
+                    <form action="" name="login1">
+                        <input type="text" value="请输入手机号码" name="userName">
+                        <input type="text" value="请输入密码" name="userPass">                       
+                        <div class="hyl-tsa">手机号码不能为空</div>
+                        <div class="hyl-tsb">密码不能为空</div>
+                        <input type="button" value="登 录" class="hyl-btn" style="margin-top: 0; margin-left:10px ;width:290px;">	
+                    </form>				
+                </div>
+                <div class="hyl-selects" style="display:none">
+                    <form action="" name="login2">
+                        <input type="text" value="请输入手机号码" name="phone">
+                        <input type="text" value="请输入验证码" class="hyl-yan-input" name="yan">
+                        <div class="hyl-tsa1" >手机号码不能为空</div>
+                        <div class="hyl-tsb1">验证码不能为空</div>
+                        <div class="hyl-tsb2">验证码不正确</div>
+                        <div class="hyl-yan"></div>
+                        <div class="hyl-yan-ts">看不清,换一张</div>
+                        <input type="button" value="登 录" class="hyl-btn" style="margin-top: 100px; margin-left:15px ;width:290px;">	
+                    </form>
+                
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
